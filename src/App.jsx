@@ -1,7 +1,12 @@
+import React from "react";
+import NavBar from "../Components/Navbar";
+import { Outlet } from "react-router";
+
 function App() {
   return (
     <>
-      <p>Hero IO</p>
+      <NavBar />
+      <Outlet></Outlet>
     </>
   );
 }
