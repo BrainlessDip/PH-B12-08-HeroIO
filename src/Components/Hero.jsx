@@ -5,10 +5,10 @@ import States from "./States";
 const Hero = () => {
   return (
     <>
-      <div className="inter w-[1180px] mx-auto text-center pt-20 flex justify-between items-center flex-col">
+      <div className="inter max-w-[1180px] mx-auto text-center pt-20 flex justify-between items-center flex-col">
         <div>
-          <h1 className="text-7xl font-bold">We Build</h1> <br />
-          <h1 className="text-7xl font-bold">
+          <h1 className="text-5xl md:text-7xl font-bold">We Build</h1> <br />
+          <h1 className="text-3xl md:text-7xl font-bold">
             <span className="text-[#632EE3]">Productive </span> Apps
           </h1>
         </div>

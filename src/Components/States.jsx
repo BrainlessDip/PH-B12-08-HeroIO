@@ -2,12 +2,12 @@ import React from "react";
 
 const States = () => {
   return (
-    <div className="bg-[linear-gradient(125deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] p-20 w-full inter text-white">
-      <h1 className="text-5xl font-bold text-center mb-10">
+    <div className="bg-[linear-gradient(125deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] md:p-20 p-10 w-full inter text-white">
+      <h1 className="text-[20px] md:text-5xl font-bold text-center mb-10">
         Trusted by Millions, Built for You
       </h1>
 
-      <div className="flex justify-center items-center gap-40">
+      <div className="flex justify-center items-center md:gap-40 gap-10 flex-col md:flex-row">
         <div className="flex items-center flex-col gap-4">
           <span className="opacity-60">Total Downloads</span>
           <h1 className="text-6xl font-extrabold">29.6M</h1>
