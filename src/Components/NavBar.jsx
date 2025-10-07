@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const NavBar = () => {
   return (
@@ -27,9 +28,15 @@ const NavBar = () => {
             tabIndex="0"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>Home</li>
-            <li>Apps</li>
-            <li>Installation</li>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/apps">Apps</NavLink>
+            </li>
+            <li>
+              <NavLink to="/installation">Installation</NavLink>
+            </li>
           </ul>
         </div>
         <div className="flex justify-center items-center gap-1">
@@ -41,9 +48,15 @@ const NavBar = () => {
       </div>
       <div className="navbar-center">
         <ul className="hidden md:flex items-center justify-center gap-8 inter">
-          <li>Home</li>
-          <li>Apps</li>
-          <li>Installation</li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/apps">Apps</NavLink>
+          </li>
+          <li>
+            <NavLink to="/installation">Installation</NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
