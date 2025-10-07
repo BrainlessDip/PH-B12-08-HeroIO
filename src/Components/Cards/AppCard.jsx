@@ -1,10 +1,17 @@
 import React from "react";
 import { CiStar } from "react-icons/ci";
 import { FaDownload } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const AppCard = ({ app }) => {
+  const navigate = useNavigate();
   return (
-    <div className="rounded-[4px] p-4 bg-white shadow-md space-y-2 ">
+    <div
+      className="rounded-[4px] p-4 bg-white shadow-md space-y-2"
+      onClick={() => {
+        navigate(`/apps/${app.id}`);
+      }}
+    >
       <img
         src="https://hero-apps.pages.dev/app-logo/icon-005.webp"
         className="rounded-[4px] w-full"

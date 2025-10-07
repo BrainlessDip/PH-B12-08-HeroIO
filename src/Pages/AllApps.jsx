@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../Components/Cards/AppCard";
 import { FaSearch } from "react-icons/fa";
-import { FiFilter } from "react-icons/fi";
-import { all } from "axios";
 
 const AllApps = () => {
   const apps = useLoaderData();
@@ -18,12 +16,11 @@ const AllApps = () => {
     const filterdApps = apps.filter((app) =>
       app.title.toLowerCase().includes(userText)
     );
-    console.log(filterdApps);
     setAllApps(filterdApps);
   };
 
   return (
-    <div className="p-20 inter bg-[#f5f5f5] min-h-screen">
+    <div className="p-10 md:p-20 inter bg-[#f5f5f5] min-h-screen">
       <h1 className="text-5xl font-bold text-center mb-5">
         Our All Applications
       </h1>
@@ -35,7 +32,7 @@ const AllApps = () => {
           ({allApps.length}) Apps Found
         </h1>
 
-        <div className="relative w-full max-w-xs">
+        <div className="relative w-1/2 md:w-full md:max-w-xs">
           <input
             type="search"
             onChange={handleSearch}
@@ -46,8 +43,8 @@ const AllApps = () => {
           <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
         </div>
       </div>
-      {allApps.length > 0 ? (
-        <div className="max-w-[1440px] mx-auto grid grid-cols-4 gap-4 mt-5">
+      {allApps && allApps.length > 0 ? (
+        <div className="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-5">
           {allApps.map((app) => (
             <AppCard key={app.id} app={app} />
           ))}

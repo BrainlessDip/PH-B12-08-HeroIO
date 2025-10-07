@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar bg-base-100 border-b-[1px] border-[#e9e9e9] py-4 md:px-20 inter">
       <div className="navbar-start">
@@ -15,13 +16,12 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
@@ -39,7 +39,12 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center gap-1">
+        <div
+          className="flex justify-center items-center gap-1 cursor-pointer  "
+          onClick={() => {
+            navigate("/");
+          }}
+        >
           <img src="/logo.png" className="w-[40px] h-[40px]" alt="" />
           <h1 className="md:text-2xl text-[18px] font-bold inter text-nowrap text-[#632EE3]">
             HERO.IO
@@ -60,11 +65,12 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="px-4 py-3 rounded-[4px] bg-[linear-gradient(125deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white font-semibold flex justify-between items-center gap-2.5">
-          {" "}
-          <FaGithub className="w-[20px] h-[20px]" />
-          Contribute
-        </a>
+        <Link to="https://github.com/BrainlessDip/PH-B12-08-HeroIO">
+          <div className="px-4 py-3 rounded-[4px] bg-[linear-gradient(125deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white font-semibold flex justify-between items-center gap-2.5">
+            <FaGithub className="w-[20px] h-[20px]" />
+            Contribute
+          </div>
+        </Link>
       </div>
     </div>
   );

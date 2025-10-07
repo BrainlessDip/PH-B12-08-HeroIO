@@ -4,11 +4,11 @@ import "./index.css";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import Home from "./Pages/Home";
-import Apps from "./Pages/Apps.jsx";
 import axios from "axios";
 import Loading from "./Components/Loading.jsx";
 import Root from "./Root.jsx";
 import AllApps from "./Pages/AllApps.jsx";
+import AppDetails from "./Pages/AppDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/apps/:id",
-        Component: Apps,
+        loader: async () => (await axios("/apps.json")).data,
+        Component: AppDetails,
       },
     ],
   },
