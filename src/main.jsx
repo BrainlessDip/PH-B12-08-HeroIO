@@ -9,12 +9,15 @@ import Loading from "./Components/Loading.jsx";
 import Root from "./Root.jsx";
 import AllApps from "./Pages/AllApps.jsx";
 import AppDetails from "./Pages/AppDetails.jsx";
+import Installation from "./Pages/Installation.jsx";
+import NotFound from "./Pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
     hydrateFallbackElement: <Loading></Loading>,
+
     children: [
       {
         index: true,
@@ -30,6 +33,15 @@ const router = createBrowserRouter([
         path: "/apps/:id",
         loader: async () => (await axios("/apps.json")).data,
         Component: AppDetails,
+      },
+      {
+        path: "/installation",
+        loader: async () => (await axios("/apps.json")).data,
+        Component: Installation,
+      },
+      {
+        path: "*",
+        Component: NotFound,
       },
     ],
   },

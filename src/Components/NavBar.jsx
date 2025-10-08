@@ -5,7 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router";
 const NavBar = () => {
   const navigate = useNavigate();
   return (
-    <div className="navbar bg-base-100 border-b-[1px] border-[#e9e9e9] py-4 md:px-20 inter">
+    <div className="navbar bg-base-100 border-b-[1px] border-[#e9e9e9] bg-white py-4 md:px-20 inter">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
