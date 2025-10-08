@@ -24,10 +24,12 @@ const Hero = () => {
           <div className="my-10 flex gap-4">
             <StoreButton
               logo={"/playstore.png"}
+              url={"https://play.google.com/store/apps?hl=en"}
               name={"Google Play"}
             ></StoreButton>
             <StoreButton
               logo={"/appstore.png"}
+              url={"https://www.apple.com/app-store"}
               name={"App Store"}
             ></StoreButton>
           </div>

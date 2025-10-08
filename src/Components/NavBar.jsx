@@ -5,7 +5,7 @@ import { Link, NavLink, useNavigate } from "react-router";
 const NavBar = () => {
   const navigate = useNavigate();
   return (
-    <div className="navbar bg-base-100 border-b-[1px] border-[#e9e9e9] bg-white py-4 md:px-20 inter">
+    <div className="navbar border-b-[1px] border-[#e9e9e9] bg-white py-4 md:px-20 inter">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div
-          className="flex justify-center items-center gap-1 cursor-pointer  "
+          className="flex justify-center items-center gap-1 cursor-pointer"
           onClick={() => {
             navigate("/");
           }}

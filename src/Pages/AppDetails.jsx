@@ -71,6 +71,7 @@ const AppDetails = () => {
                   <div className="flex md:block justify-center items-center">
                     <button
                       className="bg-[#00d390] rounded-[4px] text-white px-5 py-3.5 text-[20px] font-semibold"
+                      disabled={InstalledApps.includes(Number(app.id))}
                       onClick={() => {
                         const InstalledApps = InstallApp(app.id);
                         SetInstalledApps(InstalledApps);

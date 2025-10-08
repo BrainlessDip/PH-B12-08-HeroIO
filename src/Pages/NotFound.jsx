@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const NotFound = () => {
   return (
-    <div className="flex justify-center items-center flex-col gap-4">
+    <div className="flex justify-center items-center flex-col gap-4 my-16">
       <img src="/error-404.png" alt="" />
       <h1 className="text-5xl font-semibold">Oops, page not found!</h1>
       <p className="text-[15px] font-bold text-center text-[#627382] opacity-80">
