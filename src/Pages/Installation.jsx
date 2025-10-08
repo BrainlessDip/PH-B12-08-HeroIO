@@ -31,7 +31,7 @@ const Installation = () => {
   }, [InstalledApps, sort, AllApps]);
 
   return (
-    <div className="p-10 md:p-20 inter bg-[#f5f5f5] min-h-screen">
+    <div className="p-5 pt-20 inter bg-[#f5f5f5] min-h-screen">
       <h1 className="text-5xl font-bold text-center mb-5">
         Your Installed Apps
       </h1>

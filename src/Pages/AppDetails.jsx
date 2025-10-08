@@ -24,11 +24,11 @@ const AppDetails = () => {
   const [InstalledApps, SetInstalledApps] = useState(GetInstalledApps());
   return (
     <>
-      <div className="p-20">
+      <div className="p-8 md:p-20">
         <div>
           {app ? (
             <>
-              <div className="flex justify-start items-center gap-10 inter ">
+              <div className="flex justify-start items-center flex-col md:flex-row gap-10 inter ">
                 <div>
                   <img
                     src="https://hero-apps.pages.dev/app-logo/icon-005.webp"
@@ -68,25 +68,27 @@ const AppDetails = () => {
                       </h1>
                     </div>
                   </div>
-                  <button
-                    className="bg-[#00d390] rounded-[4px] text-white px-5 py-3.5 text-[20px] font-semibold"
-                    onClick={() => {
-                      const InstalledApps = InstallApp(app.id);
-                      SetInstalledApps(InstalledApps);
-                    }}
-                  >
-                    {InstalledApps.includes(Number(app.id))
-                      ? "Installed"
-                      : `Install Now (${app.size} MB)`}
-                  </button>
+                  <div className="flex md:block justify-center items-center">
+                    <button
+                      className="bg-[#00d390] rounded-[4px] text-white px-5 py-3.5 text-[20px] font-semibold"
+                      onClick={() => {
+                        const InstalledApps = InstallApp(app.id);
+                        SetInstalledApps(InstalledApps);
+                      }}
+                    >
+                      {InstalledApps.includes(Number(app.id))
+                        ? "Installed"
+                        : `Install Now (${app.size} MB)`}
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="border-b-[1px] border-[#001931] opacity-20 my-10"></div>
               <h1 className="mb-6 text-2xl font-semibold">Ratings</h1>
 
               <BarChart
-                width={1000}
-                height={400}
+                width={400}
+                height={300}
                 data={app.ratings}
                 margin={{
                   top: 5,

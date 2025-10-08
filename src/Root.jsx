@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet, useNavigation } from "react-router";
 import NavBar from "./Components/NavBar";
 import Loading from "./Components/Loading";
+import Footer from "./Components/Footer";
 
 function Root() {
   const navigation = useNavigation();
@@ -9,6 +10,7 @@ function Root() {
     <>
       <NavBar />
       {navigation.state === "loading" ? <Loading /> : <Outlet></Outlet>}
+      <Footer />
     </>
   );
 }
