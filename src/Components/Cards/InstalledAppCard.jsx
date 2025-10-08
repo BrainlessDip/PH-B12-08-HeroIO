@@ -6,7 +6,7 @@ import { UninstallApp } from "../../utils/InstallApps";
 
 const InstalledAppCard = ({ app, handleUninstall }) => {
   return (
-    <div className="p-4 bg-white flex justify-between items-center">
+    <div className="p-4 bg-white flex flex-col md:flex-row justify-between items-center">
       <div className="flex gap-5 items-center">
         <img
           src="https://hero-apps.pages.dev/app-logo/icon-005.webp"

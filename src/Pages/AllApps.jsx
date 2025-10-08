@@ -58,7 +58,7 @@ const AllApps = () => {
       ) : (
         <>
           {allApps && allApps.length > 0 ? (
-            <div className="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-5">
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-5">
               {allApps.map((app) => (
                 <AppCard key={app.id} app={app} />
               ))}

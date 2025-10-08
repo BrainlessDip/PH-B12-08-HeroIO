@@ -9,7 +9,7 @@ const TrendingApps = ({ apps }) => {
       <p className="text-[15px] font-bold text-center text-[#627382]">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
         {apps.map((app) => (
           <AppCard key={app.id} app={app} />
         ))}

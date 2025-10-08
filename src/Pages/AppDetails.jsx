@@ -86,29 +86,29 @@ const AppDetails = () => {
               </div>
               <div className="border-b-[1px] border-[#001931] opacity-20 my-10"></div>
               <h1 className="mb-6 text-2xl font-semibold">Ratings</h1>
-
-              <BarChart
-                width={400}
-                height={300}
-                data={app.ratings}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar
-                  dataKey="count"
-                  fill="#8884d8"
-                  activeBar={<Rectangle fill="pink" stroke="blue" />}
-                />
-              </BarChart>
+              <ResponsiveContainer width="90%" height={300}>
+                <BarChart
+                  data={app.ratings}
+                  layout="vertical"
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <YAxis dataKey="name" type="category" />
+                  <XAxis type="number" />
+                  <Tooltip />
+                  <Legend />
+                  <Bar
+                    dataKey="count"
+                    fill="#8884d8"
+                    activeBar={<Rectangle fill="pink" stroke="blue" />}
+                  />
+                </BarChart>
+              </ResponsiveContainer>
               <div className="border-b-[1px] border-[#001931] opacity-20 my-10"></div>
               <h1 className="mb-6 text-2xl font-semibold">Description</h1>
               <p>{app.description}</p>
