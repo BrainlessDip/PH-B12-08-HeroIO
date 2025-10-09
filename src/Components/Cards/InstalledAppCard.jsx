@@ -2,14 +2,13 @@ import React from "react";
 import { CiStar } from "react-icons/ci";
 import { FaDownload } from "react-icons/fa";
 import { MdOutlineRateReview } from "react-icons/md";
-import { UninstallApp } from "../../utils/InstallApps";
 
 const InstalledAppCard = ({ app, handleUninstall }) => {
   return (
     <div className="p-4 bg-white flex flex-col md:flex-row justify-between items-center">
       <div className="flex gap-5 items-center">
         <img
-          src="https://hero-apps.pages.dev/app-logo/icon-005.webp"
+          src={app.image}
           className="rounded-[4px] w-[80px] h-[80px]"
           alt=""
         />

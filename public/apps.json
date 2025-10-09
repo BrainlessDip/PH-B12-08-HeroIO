@@ -1,6 +1,6 @@
 [
   {
-    "image": "/app-logo/icon-001.webp",
+    "image": "/app-img.png",
     "title": "FlowSync: Smart Workflow Automation",
     "companyName": "productive.io",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-002.webp",
+    "image": "/app-img.png",
     "title": "MindEase: Guided Meditation & Sleep",
     "companyName": "Calmius Ltd.",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-003.webp",
+    "image": "/app-img.png",
     "title": "Snapify: AI Photo Enhancer",
     "companyName": "VisionForge Labs",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-004.webp",
+    "image": "/app-img.png",
     "title": "NotePeak: Cloud Notes Organizer",
     "companyName": "EverTech Systems",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-005.webp",
+    "image": "/app-img.png",
     "title": "Forest: Focus for Productivity",
     "companyName": "productive.io",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-006.webp",
+    "image": "/app-img.png",
     "title": "TaskZen: Daily Planner & Tracker",
     "companyName": "Planify Digital",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-007.webp",
+    "image": "/app-img.png",
     "title": "TuneBeam: Stream Music Anywhere",
     "companyName": "SoundSphere",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-008.webp",
+    "image": "/app-img.png",
     "title": "Walleta: Expense Tracker",
     "companyName": "FinVerse",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-009.webp",
+    "image": "/app-img.png",
     "title": "Travelory: Smart Trip Planner",
     "companyName": "GlobeTrek Labs",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-010.webp",
+    "image": "/app-img.png",
     "title": "CookMate: Recipe & Grocery Helper",
     "companyName": "KitchenCore",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-011.webp",
+    "image": "/app-img.png",
     "title": "HealthIQ: Wellness Tracker",
     "companyName": "VitalCore",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-012.webp",
+    "image": "/app-img.png",
     "title": "Langly: AI Language Tutor",
     "companyName": "LingoWorks",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-013.webp",
+    "image": "/app-img.png",
     "title": "FitWave: Home Workout Coach",
     "companyName": "BodyTune",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-014.webp",
+    "image": "/app-img.png",
     "title": "CryptoDash: Market Monitor",
     "companyName": "CoinVision",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-015.webp",
+    "image": "/app-img.png",
     "title": "PixTune: Video Editor",
     "companyName": "CreativeCore",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-016.webp",
+    "image": "/app-img.png",
     "title": "TimeBloc: Smart Scheduler",
     "companyName": "Zenovate Apps",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-017.webp",
+    "image": "/app-img.png",
     "title": "Moodly: Daily Mood Journal",
     "companyName": "Mindcraft Studio",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-018.webp",
+    "image": "/app-img.png",
     "title": "Brewly: Coffee Recipes & Timer",
     "companyName": "Caffeinex",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-019.webp",
+    "image": "/app-img.png",
     "title": "CodeBoard: Developer Notes",
     "companyName": "DevVerse",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-020.webp",
+    "image": "/app-img.png",
     "title": "EcoTrack: Carbon Footprint Monitor",
     "companyName": "GreenMind",
     "id": 20,
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-021.webp",
+    "image": "/app-img.png",
     "title": "StockMind: Trading Simulator",
     "companyName": "FinLearn",
     "id": 21,
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-022.webp",
+    "image": "/app-img.png",
     "title": "Dreamio: Sleep Sound & Tracker",
     "companyName": "NightTech",
     "id": 22,
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-023.webp",
+    "image": "/app-img.png",
     "title": "NewsPilot: Smart News Feed",
     "companyName": "InfoStream",
     "id": 23,
@@ -414,7 +414,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-024.webp",
+    "image": "/app-img.png",
     "title": "ChefCam: AR Cooking Assistant",
     "companyName": "FoodLens",
     "id": 24,
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-025.webp",
+    "image": "/app-img.png",
     "title": "Quizora: Learn with Quizzes",
     "companyName": "StudyHub",
     "id": 25,
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-026.webp",
+    "image": "/app-img.png",
     "title": "SafeLock: Password Vault",
     "companyName": "CyberKeep",
     "id": 26,
@@ -468,7 +468,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-027.webp",
+    "image": "/app-img.png",
     "title": "FlowPaint: Digital Art Studio",
     "companyName": "Artify Labs",
     "id": 27,
@@ -486,7 +486,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-028.webp",
+    "image": "/app-img.png",
     "title": "FocusCam: Auto Blur Background",
     "companyName": "VisionaryTech",
     "id": 28,
@@ -504,7 +504,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-029.webp",
+    "image": "/app-img.png",
     "title": "MindChess: AI Strategy Game",
     "companyName": "BrainStorm Games",
     "id": 29,
@@ -522,7 +522,7 @@
     ]
   },
   {
-    "image": "/app-logo/icon-030.webp",
+    "image": "/app-img.png",
     "title": "ZenPet: Pet Care Tracker",
     "companyName": "HappyTail",
     "id": 30,
