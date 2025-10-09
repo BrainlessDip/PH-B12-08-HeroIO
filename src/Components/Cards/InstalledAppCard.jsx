@@ -5,13 +5,15 @@ import { MdOutlineRateReview } from "react-icons/md";
 
 const InstalledAppCard = ({ app, handleUninstall }) => {
   return (
-    <div className="p-4 bg-white flex flex-col md:flex-row justify-between items-center">
-      <div className="flex gap-5 items-center">
-        <img
-          src={app.image}
-          className="rounded-[4px] w-[80px] h-[80px]"
-          alt=""
-        />
+    <div className="p-4 bg-white flex flex-col md:flex-row justify-between items-start">
+      <div className="flex gap-5 items-center justify-between ">
+        <div>
+          <img
+            src={app.image}
+            className="rounded-[4px] w-[80px] h-[80px]"
+            alt=""
+          />
+        </div>
         <div>
           <h1>{app.title}</h1>
           <div className="flex gap-6">
@@ -29,12 +31,10 @@ const InstalledAppCard = ({ app, handleUninstall }) => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex justify-center sm:justify-end w-full sm:w-auto mt-4">
         <button
-          className="bg-[#00d390] rounded-[4px] text-white px-5 py-3 font-semibold"
-          onClick={() => {
-            handleUninstall(app.id);
-          }}
+          onClick={() => handleUninstall(app.id)}
+          className="bg-[#00d390] hover:bg-[#00b87d] text-white font-semibold px-6 py-2.5 rounded-md w-full sm:w-auto"
         >
           Uninstall
         </button>

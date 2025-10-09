@@ -31,13 +31,13 @@ const AppDetails = () => {
               <div className="flex justify-start items-center flex-col md:flex-row gap-10 inter ">
                 <div>
                   <img
-                    src="https://hero-apps.pages.dev/app-logo/icon-005.webp"
-                    className="rounded-[4px] w-[350px] h-[350px] shadow-md"
+                    src={app.image}
+                    className="rounded-md w-[350px] h-[350px] shadow-md"
                     alt=""
                   />
                 </div>
                 <div>
-                  <h1 className="text-3xl font-bold mb-2">{app.title}</h1>
+                  <h1 className="text-2xl font-bold mb-2">{app.title}</h1>
                   <h3 className="mb-7">
                     Developed by{" "}
                     <span className="text-[#632ee3] font-semibold">
@@ -45,7 +45,7 @@ const AppDetails = () => {
                     </span>
                   </h3>
                   <div className="border-b-[1px] border-[#001931] opacity-20 mb-4"></div>
-                  <div className="grid grid-cols-3 gap-10 mb-8 ">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-8 ">
                     <div className="flex gap-2 items-center flex-col">
                       <FaDownload className="w-[48px] h-[48px]" />
                       <h1 className="text-left">Downloads</h1>
@@ -53,14 +53,14 @@ const AppDetails = () => {
                         {app.downloads}
                       </h1>
                     </div>
-                    <div className="flex gap-2 items-center flex-col w-fit">
+                    <div className="flex gap-2 items-center flex-col">
                       <CiStar className="w-[48px] h-[48px]" />
                       <h1 className="text-left">Average Ratings</h1>
                       <h1 className="text-[40px] font-extrabold text-left">
                         {app.ratingAvg}
                       </h1>
                     </div>
-                    <div className="flex gap-2 items-center flex-col w-fit">
+                    <div className="flex gap-2 items-center flex-col col-span-2 md:col-span-1">
                       <MdOutlineRateReview className="w-[48px] h-[48px]" />
                       <h1 className="text-left">Total Reviews</h1>
                       <h1 className="text-[40px] font-extrabold text-left">
@@ -70,7 +70,7 @@ const AppDetails = () => {
                   </div>
                   <div className="flex md:block justify-center items-center">
                     <button
-                      className="bg-[#00d390] rounded-[4px] text-white px-5 py-3.5 text-[20px] font-semibold"
+                      className="bg-[#00d390] rounded-[4px] text-white px-5 py-3.5 text-[20px] font-semibold hover:bg-[#00b87d]"
                       disabled={InstalledApps.includes(Number(app.id))}
                       onClick={() => {
                         const InstalledApps = InstallApp(app.id);
